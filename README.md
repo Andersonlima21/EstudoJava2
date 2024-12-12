@@ -18,3 +18,5 @@ Sobre os métodos (ou comportamentos) de um objeto;
 A pensar nas entidades do mundo real em forma de objetos, que possuem características (atributos) e comportamentos ou ações (métodos).
 
 Aula 2 Iniciando:
+
+Criando outra branch para subir as atts nela
