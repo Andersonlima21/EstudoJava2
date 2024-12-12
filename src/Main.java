@@ -9,9 +9,18 @@ public class Main {
         objeto1.valorDoubleObj = 10.0;
 
         // Acessando atributos do objeto
-        System.out.println(objeto1.nomeObj);
-        System.out.println(objeto1.valorIntObj);
-        System.out.println(objeto1.valorDoubleObj);
+//        System.out.println(objeto1.nomeObj);
+//        System.out.println(objeto1.valorIntObj);
+//        System.out.println(objeto1.valorDoubleObj);
+
+        // Chamanda metodo
+        objeto1.exibeObj();
+
+        objeto1.somaValores(3);
+        objeto1.somaValores(10);
+
+        System.out.println(objeto1.somaDeValores);
+        System.out.println(objeto1.retornaMedia());
 
     }
 }
