@@ -1,4 +1,6 @@
 import br.alura.aula.objeto.Obj;
+import br.alura.aula.objeto.Obj2;
+import br.alura.calculadora.CalculadoraObjetos;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,5 +27,30 @@ public class Main {
         System.out.println("Total de valores enviados: " + objeto1.getTotalDeValoresEnviados());
 
         System.out.println(objeto1.retornaMedia());
+
+        Obj2 objeto2 = new Obj2();
+
+        objeto2.setValues("Segundo obj");
+        objeto2.setValueInt(2);
+        objeto2.setValueDouble(20.0);
+        objeto2.exibeObj();
+        objeto2.somaValores(6);
+        objeto2.somaValores(20);
+
+        objeto2.setIntTesteObj2(10);
+        objeto2.setDoubleValorTesteObj2(10.5);
+
+        System.out.println("Total de valores enviados OBJETO 2: " + objeto2.getTotalDeValoresEnviados());
+        System.out.println(objeto2.retornaMedia());
+
+
+        System.out.println("---------------");
+
+        CalculadoraObjetos calculadora = new CalculadoraObjetos();
+
+        calculadora.calcula(objeto1);
+        calculadora.calcula(objeto2);
+        System.out.println(calculadora.getTotal());
+
     }
 }

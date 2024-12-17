@@ -1,41 +1,13 @@
 package br.alura.aula.objeto;
 
-public class Obj {
-    private String nomeObj;
-    private int valorIntObj;
-    private double valorDoubleObj;
+public class Obj extends Heranca {
+    String obj1;
 
-    private double somaDeValores;
-    private int totalDeValoresEnviados;
-
-    public void exibeObj() {
-        System.out.println("Nome do objeto: " + nomeObj);
-        System.out.println("Valor inteiro do objeto: " + valorIntObj);
-        System.out.println("Valor double do objeto: " + valorDoubleObj);
+    public String getObj1() {
+        return obj1;
     }
 
-    public void somaValores(double valor) {
-        somaDeValores += valor;
-        totalDeValoresEnviados++;
-    }
-
-    public double retornaMedia() {
-        return somaDeValores / totalDeValoresEnviados;
-    }
-
-    public int getTotalDeValoresEnviados() {
-        return totalDeValoresEnviados;
-    }
-
-    public void setValues(String nomeObj) {
-        this.nomeObj = nomeObj;
-    }
-
-    public void setValueInt(int valorInt) {
-        this.valorIntObj = valorInt;
-    }
-
-    public void setValueDouble(double valorDouble) {
-        this.valorDoubleObj = valorDouble;
+    public void setObj1(String obj1) {
+        this.obj1 = obj1;
     }
 }
